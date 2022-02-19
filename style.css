@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --VerydarkblueMBG: hsl(217, 54%, 11%);
+  --VerydarkblueCBG: hsl(216, 50%, 16%);
+  --VerydarkblueL: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  font-size: 18px;
+  height: 100vh;
+  background: var();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--VerydarkblueMBG);
+  font-family: "Outfit", sans-serif;
+}
+.darker-bg {
+  background: var(--VerydarkblueMBG);
+  padding: 20px;
+  height: 70vh;
+  padding: 20px;
+  top: 20vh;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  
+  border-radius: 15px;
+  height: 500px;
+  padding: 10px;
+  background-color: var(--VerydarkblueCBG);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 20px 15px 15px hsl(216deg 61% 9%);;
+}
+
+.nft {
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  height: 280px;
+  width: 280px;
+}
+.eq-image {
+  position: absolute;
+  width: 280px;
+  left: 0;
+	right: 0;
+  border-radius: 10px;
+}
+.hovernft{
+  display: none;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-color: hsl(178deg 100% 50% / 50%);
+  border-radius: 10px;
+}
+.hovernftimg{
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  opacity: 1;
+}
+.nft:hover  .hovernft {
+  display: block;
+  cursor: pointer
+}
+
+.title1,
+.detail1,
+.detail2,
+.dayleft,
+.creator {
+  padding-left: 8px;
+  padding-top: 10px;
+}
+.detail2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 300;
+  border-bottom:2px solid var(--VerydarkblueL);
+  padding-bottom:10px;
+}
+.title1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.title1:hover {
+  color: var(--Cyan);
+  cursor: pointer
+}
+.detail1 {
+  color: var(--Softblue);
+}
+.price {
+  padding-top: 10px;
+  color: var(--Cyan);
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.dayleft {
+  color: var(--Softblue);
+  display: flex;
+}
+.creator{
+  display: flex;
+  align-items: center;
+}
+.creator > span {
+  color: var(--Softblue);
+  padding-left: 7px;
+}
+.creator > span:nth-of-type(2) {
+  color: var(--White);
+}
+.creator > span:nth-of-type(2):hover {
+  color: var(--Cyan);
+  cursor: pointer
+}
+.creator  img{
+  width: 40px;
+}
+.clock{
+  padding-top: 2px;
+  padding-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.photo{
+  border: 1px solid white;
+  border-radius: 50%;
+}
