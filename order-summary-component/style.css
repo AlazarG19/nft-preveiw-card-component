@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Paleblue: rgb(224, 232, 255);
+  --Brightblue: rgb(56, 41, 224);
+  --Verypaleblue: rgb(245, 247, 255);
+  --Desaturatedblue: rgb(114, 128, 167);
+  --Darkblue: rgb(31, 47, 86);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: -70px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(224, 232, 255,0.7)
+}
+.container {
+  border-radius: 10px;
+  background: white;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 8px 8px 1px rgb(224, 232, 255);
+}
+.title {
+  font-size: 20px;
+  color: var(--Darkblue);
+  font-weight: 900;
+  text-align: center;
+}
+.container > * {
+  padding-top: 20px;
+}
+.hero {
+  border-radius: 10px 10px 0px 0px;
+  width: 300px;
+  padding-top: 0;
+}
+.detail1 {
+  color: var(--Desaturatedblue);
+  text-align: center;
+  margin: 0px 40px 0px 40px;
+  font-weight: 500;
+}
+.Order {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px 10px 30px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--Verypaleblue);
+  width: 225px;
+  padding: 20px 10px 20px 10px;
+  border-radius: 15px;
+}
+.music-icon {
+  width: 30px;
+  height: 30px;
+}
+.orderdetail {
+  font-size: 13px;
+  margin-left: -45px;
+}
+.orderdetailtitle {
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+.orderdetailoffer{
+  color: var(--Desaturatedblue);
+}
+.change {
+  font-size: 13px;
+  color: var(--Brightblue);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.change:hover{
+  text-decoration: none;
+  opacity: .5;
+  cursor: pointer;
+}
+.proceed {
+  margin: 0 auto;
+  width: 250px;
+  padding: 10px 40px 10px 40px;
+  background-color: var(--Brightblue);
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+  box-shadow: 1px 15px 8px 1px rgb(56, 41, 224,.15);
+  font-family: "Red Hat Display", sans-serif;
+}
+.proceed:hover{
+    opacity: .8;
+    cursor: pointer;
+  
+}
+.cancel{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900px;
+  color: var(--Darkblue);
+  font-weight: 900;
+  opacity: .7;
+  width: 83px;
+  margin: 0 auto;
+}
+.cancel:hover{
+  opacity: 1;
+  cursor: pointer;
+}
